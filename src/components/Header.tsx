@@ -31,24 +31,18 @@ const Header = () => {
       }`}
     >
       <div className="container mx-auto px-6">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-center gap-12">
           <button
             onClick={scrollToTop}
-            className="group flex flex-col items-start"
+            className="text-sm font-semibold text-muted-foreground hover:text-foreground transition-colors uppercase tracking-widest"
           >
-            <span className="text-sm font-semibold text-muted-foreground hover:text-foreground transition-colors uppercase tracking-widest">
-              IZPOSOJA OZVOČENJA
-            </span>
-            <div className="h-px w-full bg-muted-foreground/40 mt-1 group-hover:bg-foreground/60 transition-colors" />
-            <span className="text-xs text-muted-foreground/70 mt-0.5 tracking-wide">
-              za zabave, piknike in dogodke
-            </span>
+            IZPOSOJA OZVOČENJA
           </button>
           <button
             onClick={() => scrollToSection("kontakt")}
-            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors uppercase tracking-wider"
+            className="text-sm font-semibold text-muted-foreground hover:text-foreground transition-colors uppercase tracking-widest"
           >
-            Kontakt
+            KONTAKT
           </button>
         </div>
       </div>
