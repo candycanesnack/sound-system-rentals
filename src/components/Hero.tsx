@@ -41,16 +41,22 @@ const Hero = () => {
             za zabave, piknike in dogodke
           </p>
           
-          {/* Scroll indicator above button */}
-          <div className="flex flex-col items-center gap-6">
-            <span className="text-sm text-muted-foreground/70 tracking-wide">
-              Pomakni se navzdol
-            </span>
+          {/* Animated scroll indicator */}
+          <div className="flex flex-col items-center gap-4">
+            <button
+              onClick={scrollToPackages}
+              className="flex flex-col items-center gap-2 text-muted-foreground hover:text-foreground transition-colors group cursor-pointer"
+            >
+              <span className="text-sm tracking-wide">
+                Pomakni se navzdol
+              </span>
+              <ChevronDown className="w-6 h-6 animate-bounce" />
+            </button>
             
             <Button
               onClick={scrollToPackages}
               size="lg"
-              className="bg-card text-card-foreground hover:bg-card/90 px-8 py-6 text-base font-medium rounded-full shadow-lg hover:shadow-xl transition-all group"
+              className="bg-card text-card-foreground hover:bg-card/90 px-8 py-6 text-base font-medium rounded-full shadow-lg hover:shadow-xl transition-all group mt-4"
             >
               Oglej si ponudbo
               <ChevronDown className="w-4 h-4 ml-1 group-hover:translate-y-0.5 transition-transform" />
